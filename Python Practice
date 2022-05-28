@@ -1,0 +1,72 @@
+name = "Tommy D"
+
+# IF/ELIF Statements
+if name == "Bucky":
+    print("Hey There Bucky?")
+elif name == "Lucy":
+    print("What up Lucedawg?")
+elif name == "Sammy":
+    print("What up Slammy?")
+else:
+    print("Please Sign up for the Site");
+
+
+# For loops
+
+foods = ['bacon', 'tuna', 'ham', 'sausages', 'beef']
+
+for f in foods:
+    print(f)
+    print(len(f))
+
+for f in foods[:2]:
+    print(f)
+    print(len(f))
+
+
+
+# Range and While loop (Infinite Loops)
+
+for x in range(10):
+    print("Bucky is Awesome!!!")
+
+
+for x in range(10):
+    print(x)
+
+
+
+for x in range(5, 12):
+    print(x)
+
+
+for x in range(10, 40, 5):
+    print(x)
+
+
+butter = 5
+
+while butter < 10:
+    print(butter)
+    butter +=1
+
+
+
+# Break and Continue; Find the magic number
+
+magic_number = 26
+
+for n in range(100):
+    if n is magic_number:
+        print(n, "is the magic number")
+        break
+    else:
+        print(n)
+
+
+# Make a program to loops through the numbers 1 to 100 and print out any number that is a multiple of 4
+
+
+
+for x in range(0, 101, 4):
+    print(x)
