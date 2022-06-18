@@ -1,0 +1,20 @@
+import pandas as pd
+
+dataset = pd.read_csv (r'/Users/barrymiller/Desktop/NetFlix New(CSV).csv')  #reading csv file
+print (dataset)
+print(dataset.shape)                                     #Getting total number of rows and columns
+print (dataset.head())                                   #Viewing the first five rows of data
+print (dataset.tail())                                   #Viewing the last five rows of data
+print (dataset.sample(5))                                #Random sample of 5 rows of data
+print (dataset.dtypes)                                   #Identifying the different data types in the data
+#dataset.drop('Volume', axis = 1, inplace = True)        #Dropping a Column
+#print (dataset)
+#dataset.drop([0, 1, 2, 3], axis = 0, inplace = True)    #Dropping Rows
+print (dataset)
+print (dataset.duplicated())                             #Identifying Duplicate Rows
+print (dataset.duplicated().value_counts())              #Identifies sum of duplicates and sum of non-duplicates
+print(dataset[dataset.duplicated()])                     #Shows exact duplicated data
+print (dataset.drop_duplicates())                        #Removes duplicate data
+data1 = dataset.drop_duplicates()                        #Naming a new variable to ensure duplicates have been processed
+print (data1)
+print (data1.duplicated().value_counts())                #Ensuring duplicates have been removed
